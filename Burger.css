@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:  sans-serif;
+}
+#navbarBlock{
+    width: 100%;
+    height: 100vh;
+     background-image: url("./bgImage.png");
+}
+#navbarBlock > article{
+    width: 90%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+#navbarBlock > article > header {
+    flex-basis: 20%;
+    height: inherit;
+    display: flex;
+}
+.logoBlock{
+    flex-basis: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logoBlock > span{
+    font-size: 32px;
+    color: rgb(73, 18, 18);
+}
+.logoBlock > span:first-child > i{
+    margin-right: 4px;
+}
+.logoBlock > span:last-child{
+    letter-spacing: -1px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+}
+.menuBlock{
+    flex-basis: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.expressDelivery{
+    color: rgb(73, 18, 18);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.menuBlock > ul{
+    list-style-type: none;
+    display: flex;
+}
+.menuBlock > ul > li > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    margin-left: 60px;
+    font-size: 22px;
+    color: rgb(73, 18, 18);
+    letter-spacing: 4px;
+}
+#navbarBlock > article > main {
+    flex-basis: 80%;
+    height: inherit;
+    display: flex;
+}
+.contentBlock{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contentBlock > p{
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    width: 340px;
+    padding: 8px;
+    color: rgb(73, 18, 18);
+    border: 2px dashed rgb(73, 18, 18);
+    margin-bottom: 12px;
+}
+.contentBlock > h1{
+    font-size: 92px;
+    font-family: "Roboto Slab";
+    font-weight: 900;
+    color: rgb(73, 18, 18);
+    text-shadow: 2px 2px 2px white;
+}
+.contentBlock > h3{
+    font-size: 42px;
+    font-family: "Roboto Slab";
+    font-weight: 900;
+    color: rgb(73, 18, 18);
+    text-shadow: 2px 2px 2px white;
+}
+.imageBlock{
+    flex-basis: 50%;
+    width: 100%;
+position: relative;
+}
+.imageBlock > img:first-child{
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    z-index: 10;
+}
+.imageBlock > img:nth-child(2){
+    width: 800px;
+    position: absolute;
+    top: 110px;
+    left: 130px;
+}
+.imageBlock > img:nth-child(3){
+    width: 700px;
+    height: 500px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 80px;
+    left: -120px;
+}
+.imageBlock > .dollarContent{
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    display:inline-block;
+    width: 170px;
+    height: 170px;
+    border: 4px dashed #fff;
+    outline: 10px solid red;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+}
+
+
+/* !image block starts */
+#imageBlock{
+    width: 100%;
+    height: 70vh;
+}
+#imageBlock > article{
+    width: 85%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+}
+.leftImage{
+    flex-basis: 50%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+}
+.leftImage > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.content{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    color: #fff;
+}
+.content > h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+}
+.content > h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+}
+.rightImage{
+    flex-basis: 50%;
+    height: inherit;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+}
+.rightImage > .topImage{
+    flex-basis: 50%;
+    width: 100%;
+    position: relative;
+}
+.topImage > p{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 150px;
+
+}
+.rightImage > .topImage > img{
+    width: 700px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.rightImage > .bottomImage{
+    flex-basis: 50%;
+    position: relative;
+}
+.bottomImage > p{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 150px;
+
+}
+.rightImage > .bottomImage > img{
+    width: 700px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* ~choose & enjoy part starts */
+#chooseEnjoyBlock{
+    width: 100%;
+    height: 90vh;
+    font-family: "Oswald", sans-serif;
+}
+#chooseEnjoyBlock > article{
+    width: 90%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.topChoose{
+    flex-basis: 25%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.topChoose > h3{
+    font-size: 13px;
+    width: 190px;
+    padding: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(241, 176, 97);
+    color: rgb(73, 18, 18);
+    margin-bottom: 10px;
+}
+.topChoose > h1{
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(73, 18, 18);
+}
+.topChoose > p{
+    width: 900px;
+    text-align: center;
+    color: rgb(73, 18, 18);
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.cards{
+    flex-basis: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items{
+    width: 30%;
+    height: inherit;
+}
+.item1 , .item2 , .item3{
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
+.item1 > img , .item2 > img , .item3 > img{
+    width: 320px;
+    margin-bottom: 30px;
+}
+.item1 > h2,.item2 > h2,.item3 > h2{
+text-transform: uppercase;
+font-weight: 900;
+color: rgb(73, 18, 18);
+margin-bottom: 10px;
+}
+.item1 > p ,.item2 > p,.item3 > p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.item1 > button,.item2 > button,.item3 > button{
+    padding: 15px 40px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: none;
+    background-color: red;
+}
+
+/* !upcoming events starts */
+#upcomingEvents{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#upcomingEvents > article{
+    width: 85%;
+    height: 55vh;
+    box-shadow: 2px 2px 20px 0px rgb(157, 157, 157);
+    padding: 22px;
+    display: flex;
+}
+.leftContent{
+    flex-basis: 50%;
+    height: 100%;
+}
+.para1{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    color: rgb(73, 18, 18);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.leftContent > h2{
+    font-size: 45px;
+    font-family: "Oswald", sans-serif;
+    color: rgb(73, 18, 18);
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+.para2{
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.rightContent{
+    flex-basis: 50%;
+    height: 100%;
+}
+.rightContent > img{
+    width: 100%;
+    height: 100%;
+}
+
+/* !formBlock starts */
+#formBlock{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+#formBlock > article{
+    width: 50%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+   
+}
+#formBlock > article > h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(73, 18, 18);
+}
+#formBlock > article > h1{
+    font-size: 44px;
+    font-weight: 900;
+    color: rgb(73, 18, 18);
+    margin-bottom: 20px;
+}
+#formBlock > article > form{
+    width: 80%;
+    height: 50vh;
+}
+#formBlock > article > form > table{
+   width: 100%;
+   height: 100%;
+}
+.data{
+    width: 50%;
+    margin: 0px 20px;
+}
+.data > input{
+    width: 100%;
+    height: 40px;
+   border: 1px solid #999;
+   border-radius: 6px;
+   padding: 4px 20px;
+   outline: none;
+}
+.data > input[type="submit"]{
+    background-color: crimson;
+    color: #fff;
+    font-weight: 900;
+}
+
+
+#formBlock  > .img1{
+    width: 220px;
+    position: absolute;
+    top: 130px;
+    left: 260px;
+}
+#formBlock  > .img2{
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    left: -40px;
+}
+#formBlock  > .img3{
+    width: 400px;
+    position: absolute;
+    bottom: -40px;
+    right: -160px;
+}
+
+/* !footer parts starts */
+footer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > article{
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.606) ,rgba(0, 0, 0, 0.628),rgba(0, 0, 0, 0.911)),url("https://cdn.pixabay.com/photo/2020/08/03/01/11/burger-5458918_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.topFooter{
+    flex-basis: 80%;
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+}
+.burgerHouse{
+    flex-basis: 50%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.burgerHouse > h1{
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.burgerHouse > p{
+    color: #fff;
+    text-align: justify;
+    line-height: 30px;
+}
+.location{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location > p{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.location > p > span{
+    margin-right: 20px;
+    font-size: 30px;
+}
+.bottomFooter{
+    flex-basis: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.socialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socialIcons > span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+.socialIcons > span > i{
+    color: #000;
+}
